@@ -16,3 +16,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
 }
+.shadow {
+    text-shadow: 5px 2px 4px darkred;
+}
