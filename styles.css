@@ -19,6 +19,27 @@ body {
 .shadow {
     text-shadow: 5px 2px 4px darkred;
 }
-.Top_bar {
-    color: red;
+.task_bar {
+    overflow: hidden;
+    background-color: red;
+}
+.task_bar a {
+    float: left;
+    color: darkred;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.task_bar a:hover {
+    background-color: darkgray;
+    color: darkred;
+}
+.task_bar_active {
+    background-color: grey;
+    color: darkred;
+
+}
+.task_bar a {
+    font-weight: bolder;
 }
