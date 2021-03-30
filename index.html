@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' href="styles.css">
         <title>Welcome!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='icon' href='Images/Iron_Cat_logo.png'>
         <style>
 			div.Welcome {
-                display: block;
-                margin: auto;
+				display: block;
+				margin: auto;
 				border-radius:20px 20px 20px 20px;
 				-moz-border-radius:20px 20px 20px 20px;
 				-webkit-border-radius:20px 20px 20px 20px;
@@ -17,22 +18,43 @@
 				width:250px;
                 text-align: center;
 			}
+			@media only screen and (min-width: 601px) {
+				.logo_scale {
+					height: 150px;
+					width: 150px;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				.logo_mobile_scale {
+					width: 75px;
+					height: 75px;
+				}
+			}
         </style>
         <script>
 
         </script>
     </head>
     <body>
-        <div class="task_bar">
-            <a class="task_bar_active" href="index.html">Home</a>
-            <a href="Games.html">Games</a>
-            <a href="Discord_server.html">Discord server</a>
-            <a href="Contact_us.html">Contact us</a>
-        </div>
-		<div class='Welcome'>
-            <h1><span style='color: red' class="shadow">Welcome</span></h1>
+		<div class='top_bar_mobile'>
+			<div class='dropdown'>
+				<button class='dropbtn'>Menu
+					<i class='fa fa-caret-down'></i>
+				</button>
+				<div class="dropdown-content  task_bar">
+					<a class="task_bar_active task_bar_active_mobile" href="index.html">Home</a>
+					<a href="Games.html">Games</a>
+					<a href="Discord_server.html">Discord server</a>
+					<a href="Contact_us.html">Contact us</a>
+				</div>
+			</div>
 		</div>
-        <img src="Images/Iron_Cat_logo.png" style="height: 150px; width: 150px; display: block; margin-left: auto; margin-right: auto; margin-top: 25px" alt="IronCat Studios logo">
-        <img src="Images/Ironcat_logo_2.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px" alt="IronCat Studios text">
+		<div class='main'>
+			<div class='Welcome'>
+				<h1 style='color: red; font-family: Helvetica; font-weight: bold'>Welcome</h1>
+			</div>
+			<img src="Images/Iron_Cat_logo.png" class="logo_mobile_scale logo_scale" style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px" alt="IronCat Studios logo">
+			<img src="Images/Ironcat_logo_2.png"  class="mobile_scale" style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px" alt="IronCat Studios text">
+		</div>
     </body>
 </html>
